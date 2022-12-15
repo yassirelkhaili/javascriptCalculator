@@ -12,12 +12,16 @@ const App = () => {
       setdisplayValue(displayValue + Input);
     }
     if (displayValue.length === 17) {
-        setdisplayValue("0");
+      setdisplayValue("0");
     }
   };
 
   const handleInput = () => {
-    setdisplayValue(eval(displayValue));
+    if (displayValue === "0" || displayValue === "display") {
+      setdisplayValue("0");
+    } else {
+      setdisplayValue(eval(displayValue));
+    }
   };
 
   return (
