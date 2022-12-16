@@ -100,7 +100,7 @@ const App = () => {
         </button>
       </div>
       <div className="row">
-        <button onClick={() => displayInput(" 0")} className="col-6" id="zero">
+        <button onClick={() => displayInput("0")} className="col-6" id="zero">
           0
         </button>
         <button onClick={handleInput} className="col-6 bg-warning" id="equals">
